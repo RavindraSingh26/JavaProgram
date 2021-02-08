@@ -10,6 +10,7 @@ class SingletonFeb8{
 	
 	public static SingletonFeb8 getInstance() {
 		
+		System.out.println("Call instance method..inside singlton");
 		if(instance == null) {
 			
 			synchronized (SingletonFeb8.class) {
@@ -27,6 +28,9 @@ public class Class_8_Feb {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		SingletonFeb8 obj = SingletonFeb8.getInstance();
+		System.out.println("Display : " + obj);
+		
 	}
 
 }
